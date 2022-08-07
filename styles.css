@@ -12,7 +12,7 @@
 }
 body{
     font-family: 'Epilogue', sans-serif;
-    background-color: var(--Almost-White);
+    background-color: blue;
 }
 p{
     font-size: 1.125rem;
@@ -37,6 +37,16 @@ p{
 }
 .nav-bar a:hover{
     color: var(--Almost-Black);
+}
+.features{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.company{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .registration{
     display: flex;
@@ -67,7 +77,34 @@ p{
 }
 @media(max-width:599px){
     .nav-bar{
-        display: none !important;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--Almost-White);
+        padding: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100vh;
+    }
+    .nav-bar.active{
+        padding: 14px;
+        width: 60vw;
+        transition: 0.7s ease;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .registration{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .register{
+        padding: 10px 33px;
     }
 }
 
@@ -88,6 +125,9 @@ p{
         align-items: center;
         margin-top: -3px;
     }
+    .close{
+        display: none;
+    }
     .nav-bar a{
         font-size: 14px;
     }
@@ -96,15 +136,5 @@ p{
         gap: 20px;
         position: absolute;
         left: 120px;
-    }
-    .features{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .company{
-        display: flex;
-        align-items: center;
-        gap: 10px;
     }
 }
