@@ -88,11 +88,11 @@ p{
         overflow: hidden;
         width: 0;
         height: 100vh;
+        transition: 0.6s ease;
     }
     .nav-bar.active{
         padding: 14px;
         width: 60vw;
-        transition: 0.7s ease;
     }
     .close{
         display: flex;
