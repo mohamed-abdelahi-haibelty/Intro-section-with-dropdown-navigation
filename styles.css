@@ -12,7 +12,7 @@
 }
 body{
     font-family: 'Epilogue', sans-serif;
-    background-color: blue;
+    background-color: var(--Almost-White);
 }
 p{
     font-size: 1.125rem;
@@ -76,6 +76,9 @@ p{
     outline: none;
 }
 @media(max-width:599px){
+    .menu.active{
+        display: none;
+    }
     .nav-bar{
         display: flex;
         flex-direction: column;

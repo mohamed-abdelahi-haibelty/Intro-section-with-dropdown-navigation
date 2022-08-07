@@ -5,11 +5,11 @@ const closeBtn = document.querySelector(".close");
 
 menu.addEventListener("click",()=>{
     navBar.classList.add("active");
-    menu.style.display = "none";
+    menu.classList.add("active");
 });
 
 closeBtn.addEventListener("click",()=>{
     navBar.classList.remove("active");
-    menu.style.display = "block";
+    menu.classList.remove("active");
 });
 
