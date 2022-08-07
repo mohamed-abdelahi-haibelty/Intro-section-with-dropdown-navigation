@@ -94,6 +94,11 @@ p{
         width: 60vw;
         transition: 0.7s ease;
     }
+    .close{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
     .nav{
         display: flex;
         flex-direction: column;
