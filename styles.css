@@ -105,6 +105,17 @@ p{
     border-radius: 0.8rem;
     font-size: 16px;
 }
+.text button:hover{
+    border: 1px solid var(--Almost-Black);
+    color: var(--Almost-Black);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 14px 22px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
 @media(max-width:599px){
     .menu.active{
         display: none;
@@ -125,7 +136,7 @@ p{
     }
     .nav-bar.active{
         padding: 14px;
-        width: 60vw;
+        width: 64vw;
     }
     .close{
         display: flex;
@@ -191,11 +202,16 @@ p{
         align-items: center;
         text-align: center;
         gap: 16px;
+        margin-bottom: 30px;
     }
     .text p{
         line-height: 1.5;
         font-size: 16px;
         color: var(--Medium-Gray);
+    }
+    .icons img{
+        height: 22px;
+        width: 60px;
     }
 }
 
@@ -260,7 +276,7 @@ p{
         display: grid;
         margin-top: 1.5rem;
         width: 80%;
-        grid-template-columns: 426px 300px;
+        grid-template-columns: 476px 370px;
         justify-content: space-between;
         margin-right: auto;
         margin-left: auto;
@@ -276,11 +292,23 @@ p{
         content: "\a";
         white-space: pre;
     }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+    }
     .text h1{
         font-size: 50px;
         margin-bottom: 20px;
     }
     .text p{
         margin-bottom: 20px;
+    }
+    .text{
+        margin-bottom: 80px;
+    }
+    .icons img{
+        height: 16px;
     }
 }
