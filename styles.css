@@ -35,18 +35,25 @@ p{
     color: var(--Medium-Gray);
     font-weight: 500;
 }
-.nav-bar a:hover{
-    color: var(--Almost-Black);
-}
-.features{
+.div{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.company{
+.feature{
     display: flex;
-    align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: var(--Medium-Gray);
+}
+.feature h5{
+    font-weight: 100;
+}
+.company .wrapper h5{
+    margin-bottom: 1rem;
+    color: var(--Medium-Gray);
+    font-weight: 100;
 }
 .registration{
     display: flex;
@@ -75,6 +82,11 @@ p{
     border-color: var(--Almost-Black);
     outline: none;
 }
+.wrapper{
+    overflow: hidden;
+    transition: 0.8s ease;
+    height: 0;
+}
 @media(max-width:599px){
     .menu.active{
         display: none;
@@ -86,7 +98,7 @@ p{
         position: absolute;
         top: 0;
         right: 0;
-        background-color: var(--Almost-White);
+        background-color: white;
         padding: 0;
         overflow: hidden;
         width: 0;
@@ -106,6 +118,33 @@ p{
         display: flex;
         flex-direction: column;
         gap: 25px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .wrapper{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .features .wrapper.transition{
+        height: 125px;
+    }
+    .feature{
+        margin-bottom: 15px;
+    }
+    .company{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .company .wrapper{
+        margin-left: 23px;
+        font-size: 19px;
+    }
+    .company .wrapper.transition{
+        height: 96px;
     }
     .registration{
         flex-direction: column;
@@ -133,6 +172,9 @@ p{
         align-items: center;
         margin-top: -3px;
     }
+    .nav-bar a:hover{
+        color: var(--Almost-Black);
+    }
     .close{
         display: none;
     }
@@ -144,5 +186,30 @@ p{
         gap: 20px;
         position: absolute;
         left: 120px;
+    }
+    .company{
+        position: relative;
+    }
+    .wrapper{
+        background-color: white;
+        position: absolute;
+        top: 30px;
+        left: -41px;
+        padding: 0 13px;
+        border-radius: 6px;
+        box-shadow: 1px 2px 16px var(--Medium-Gray);
+    }
+    .features .wrapper.transition{
+        height: 128px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+    .company .wrapper.transition{
+        height: 113px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+    .company .wrapper{
+        left: -6px;
     }
 }
