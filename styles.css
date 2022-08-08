@@ -87,6 +87,24 @@ p{
     transition: 0.8s ease;
     height: 0;
 }
+.main{
+    display: grid;
+}
+.text h1{
+  color: var(--Almost-Black);
+}
+.text p{
+    line-height: 1.5;
+    color: var(--Medium-Gray);
+}
+.text button{
+    border: none;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    padding: 15px 23px;
+    border-radius: 0.8rem;
+    font-size: 16px;
+}
 @media(max-width:599px){
     .menu.active{
         display: none;
@@ -153,6 +171,32 @@ p{
     .register{
         padding: 10px 33px;
     }
+    .main{
+        margin-top: 1.6rem;
+    }
+    .bg-mb{
+        margin-right: -21px;
+        margin-left: -16px;
+        margin-bottom: 2rem;
+    }
+    .bg-mb img{
+        width: 100%;
+    }
+    .bg-ds{
+        display: none;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+    .text p{
+        line-height: 1.5;
+        font-size: 16px;
+        color: var(--Medium-Gray);
+    }
 }
 
 @media(min-width:600px){
@@ -211,5 +255,32 @@ p{
     }
     .company .wrapper{
         left: -6px;
+    }
+    .main{
+        display: grid;
+        margin-top: 1.5rem;
+        width: 80%;
+        grid-template-columns: 426px 300px;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+    .bg-mb{
+        display: none;
+    }
+    .bg-ds img{
+        width:100%;
+    }
+    h1 span::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .text h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .text p{
+        margin-bottom: 20px;
     }
 }
